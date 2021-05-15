@@ -1,0 +1,20 @@
+$color-utility-one: #000000;
+$color-utility-two: #333333;
+$color-utility-three: #FFFFFF;
+$color-utility-four: #EFEFEF;
+
+$color-variation-one: #72C3DC;
+$color-variation-two: #2B8EAD;
+$color-variation-three: #6F98A8;
+$color-variation-four: #BFBFBF;
+$color-variation-five: #2F454E;
+
+
+
+@mixin grid($grid-type, $args, $row-gap, $column-gap: $row-gap) {
+    @supports (display: grid) {
+      display: grid;
+      #{$grid-type}: #{$args};
+      grid-gap: rem($row-gap) rem($column-gap);
+    }
+}

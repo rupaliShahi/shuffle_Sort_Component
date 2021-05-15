@@ -1,0 +1,38 @@
+[
+    {
+        "number": 1,
+        "className": "grid-variation-one"
+    },
+    {
+        "number": 2,
+        "className": "grid-variation-two"
+    },
+    {
+        "number": 3,
+        "className": "grid-variation-three"
+    },
+    {
+        "number": 4,
+        "className": "grid-variation-two"
+    },
+    {
+        "number": 5,
+        "className": "grid-variation-three"
+    },
+    {
+        "number": 6,
+        "className": "grid-variation-four"
+    },
+    {
+        "number": 7,
+        "className": "grid-variation-four"
+    },
+    {
+        "number": 8,
+        "className": "grid-variation-one"
+    },
+    {
+        "number": 9,
+        "className": "grid-variation-three"
+    }
+]

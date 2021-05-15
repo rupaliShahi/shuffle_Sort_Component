@@ -1,0 +1,141 @@
+body{
+    margin: 0;
+    //background-color: $color-utility-four;
+    .main-wrapper{
+        width: 60%;
+        margin: 0 auto;
+        h1{
+            margin: 0px;
+            text-align: center;
+            padding: 8px;
+            color: $color-utility-one;
+            font-size: 20px;
+            font-weight: 100;
+            @media (max-width: 768px){
+                background-color: $color-utility-two;
+                color: $color-utility-three;
+                font-size: 30px;
+            }
+        }
+        .outer-block-wrap{
+            display: grid;
+            grid-template-columns: 70% 30%;
+            .grid-container {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-auto-rows: minmax(150px, auto);
+            
+                @media only screen and (max-width: 768px) {
+                    grid-template-columns: none;
+                    row-gap: 1em;
+                    grid-auto-rows: unset;
+                }
+                .grid-item {
+                    background-color: $color-utility-four;
+                    text-align: center;
+                    //aspect-ratio: 1;
+                    .grid-inner{
+                        width: 100%;
+                        height: 100%;
+                        display: grid;
+                        align-items: center;
+                        font-size: 60px;
+                        color: $color-utility-three;
+                        &.grid-variation-one{
+                            background-color: $color-variation-three;
+                            @media (max-width: 768px){
+                                background-color: transparent;
+                                border-left: 8px solid $color-variation-three;
+                            }
+                        }
+                        &.grid-variation-two{
+                            background-color: $color-variation-two;
+                            @media (max-width: 768px){
+                                background-color: transparent;
+                                border-left: 8px solid $color-variation-two;
+                            }
+                        }
+                        &.grid-variation-three{
+                            background-color: $color-variation-five;
+                            @media (max-width: 768px){
+                                background-color: transparent;
+                                border-left: 8px solid $color-variation-five;
+                            }
+                        }
+                        &.grid-variation-four{
+                            background-color: $color-variation-four;
+                            @media (max-width: 768px){
+                                background-color: transparent;
+                                border-left: 8px solid $color-variation-four;
+                            }
+                        }
+                        @media (max-width: 768px){
+                            font-size: 30px;
+                            color: $color-utility-one;
+                            width: auto;
+                            height: auto;
+                            padding: 16px;
+                        }
+                    }
+                    @media (max-width: 768px){
+                        aspect-ratio: unset;
+                    }
+                }
+            }
+            .button-wrap{
+                margin-top: 30px;
+                .primary-btn{
+                    background-color: $color-variation-one;
+                    border: 1px solid $color-variation-one;
+                    box-shadow: 1px 4px 1px $color-variation-two;
+                    text-transform: uppercase;
+                    color: $color-utility-three;
+                    min-width: 150px;
+                    display: block;
+                    padding: 10px;
+                    margin: 0 auto 20px auto;
+                    border-radius: 6px;
+                    cursor: pointer;
+                    @media (max-width: 768px){
+                        display: inline-block;
+                        min-width: 100px;
+                    }
+                    &:first-child{
+                        @media (max-width: 768px){
+                            margin-right: 5px;
+                        }
+                    }
+                }
+                @media (max-width: 768px){
+                    grid-row-end: none;
+                    text-align: center;
+                }
+            }
+            @media only screen and (max-width: 768px) {
+                grid-template-columns: none;
+                row-gap: 1em;
+                width: 85%;
+                margin: auto;
+            }
+        }
+        .foot-para {
+            text-align: center;
+            font-style: italic;
+        }
+        @media (min-width: 768px) and (max-width: 1024px){
+            width: 80%;
+            margin: auto;
+        }
+        @media (max-width: 768px){
+            width: 100%;
+        }
+    }
+}
+
+
+
+
+
+
+
+//grid-auto-rows --> height

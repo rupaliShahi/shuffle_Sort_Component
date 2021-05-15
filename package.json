@@ -1,0 +1,22 @@
+{
+  "name": "shuffle_sort_component",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rupaliShahi/shuffle_Sort_Component.git"
+  },
+  "author": "Rupali Shahi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rupaliShahi/shuffle_Sort_Component/issues"
+  },
+  "homepage": "https://github.com/rupaliShahi/shuffle_Sort_Component#readme",
+  "dependencies": {
+    "node-sass": "^6.0.0"
+  }
+}
